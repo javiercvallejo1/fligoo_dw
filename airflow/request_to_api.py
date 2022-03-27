@@ -2,6 +2,7 @@ import requests
 import json
 import csv
 from datetime import date
+import psycopg2
 
 
 
@@ -12,7 +13,7 @@ def request_data():
     LIMIT = 100
     FLIGHT_STATUS="active"
     URL = 'http://api.aviationstack.com/v1/flights'
-    RAW_FILE_DIR = './airflow/data/raw/raw_flight_data_'+str(today)+'.json'
+    RAW_FILE_DIR = './data/raw/raw_flight_data_'+str(today)+'.json'
     QUERY_PARAMS= {'access_key':ACCESS_KEY,'limit':LIMIT,'flight_status':FLIGHT_STATUS}
 
     response= requests.get(URL,params=QUERY_PARAMS)
@@ -26,8 +27,8 @@ def request_data():
 def extract_data():
 
     today=date.today()
-    RAW_FILE_DIR='./airflow/data/raw/raw_flight_data_'+str(today)+'.json'
-    STAGGED_FILE_DIR = './airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    RAW_FILE_DIR='./data/raw/raw_flight_data_'+str(today)+'.json'
+    STAGGED_FILE_DIR = './data/stagged/stagged_flight_data'+str(today)+'.csv'
     f=open(RAW_FILE_DIR,'r')
 
     json_data : dict = json.load(f)
@@ -73,7 +74,7 @@ def extract_data():
 
 def write_db():
     today=date.today()
-    STAGGED_FILE_DIR='./airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    STAGGED_FILE_DIR='./data/stagged/stagged_flight_data'+str(today)+'.csv'
 
     get_postgres_conn=PostgresHook(postgres_conn_id='fligooTest').get_conn()
     curr=get_postgres_conn.cursor()
@@ -82,7 +83,23 @@ def write_db():
 
     with open(STAGGED_FILE_DIR,'r') as f:
      curr.copy_expert("COPY processed.testdata FROM STDIN WITH CSV HEADER", f)
-     get_postgres_conn.commit()    
+     get_postgres_conn.commit()
+
+def postgres_write():
+    conn = psycopg2.connect(    host="localhost",
+                                database="testfligoo",
+                                user="postgres",
+                                password="admin")
+    curr=conn.cursor()
+
+    today=date.today()
+    STAGGED_FILE_DIR='./data/stagged/stagged_flight_data'+str(today)+'.csv'
+   
+    
+
+    with open(STAGGED_FILE_DIR,'r') as f:
+     curr.copy_expert("COPY processed.testdata FROM STDIN WITH CSV HEADER", f)
+     conn.commit()
 
 
 
@@ -90,6 +107,7 @@ def write_db():
 def main():
     request_data()
     extract_data()
+    postgres_write()
     
 
 main()

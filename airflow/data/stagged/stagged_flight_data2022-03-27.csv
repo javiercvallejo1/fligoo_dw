@@ -1,20 +1,35 @@
 flight_date,flight_status,departure_airport,departure_timezone,arrival_airport,arrival_timezone,arrival_terminal,airline_name,flight_number,timestamp
 2022-03-28,active,Dubai,Asia-Dubai,Hyderabad Airport,Asia-Kolkata,MAIN,Air India,952,2022-03-27
-2022-03-28,active,Hokitika Airport,Pacific-Auckland,Christchurch International,Pacific-Auckland,None,Singapore Airlines,4505,2022-03-27
+2022-03-28,active,Hangzhou,Asia-Shanghai,Shenzhen,Asia-Shanghai,T3,SF Airlines,7304,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,1,Delta Air Lines,9385,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,1,Air France,8422,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Frankfurt International Airport,Europe-Berlin,1,United Airlines,8741,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Frankfurt International Airport,Europe-Berlin,1,Air Canada,9081,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Charles De Gaulle,Europe-Paris,2E,KLM,2287,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Charles De Gaulle,Europe-Paris,2E,Delta Air Lines,8627,2022-03-27
 2022-03-28,active,None,None,Milano Malpensa,Europe-Rome,1,Cargolux,8727,2022-03-27
 2022-03-28,active,Hasanudin,Asia-Makassar,Sentani,Asia-Jayapura,None,Lion Air,798,2022-03-27
-2022-03-28,active,Bundaberg,Australia-Brisbane,Brisbane International,Australia-Brisbane,D,Air New Zealand,7155,2022-03-27
+2022-03-28,active,Pulkovo,Europe-Moscow,Syktyvkar,Europe-Moscow,B,Rossiya Airlines,6587,2022-03-27
 2022-03-28,active,Madras International (Meenambakkam),Asia-Kolkata,Lohegaon,Asia-Kolkata,2,IndiGo,241,2022-03-27
+2022-03-28,active,Bandaranaike International,Asia-Colombo,Indira Gandhi International,Asia-Kolkata,3,Air India,284,2022-03-27
+2022-03-28,active,Mactan-Cebu International,Asia-Manila,Francisco Bangoy International,Asia-Manila,4,Cebu Pacific Air,593,2022-03-27
+2022-03-28,active,Ngurah Rai International,Asia-Makassar,Doha International,Asia-Qatar,5,Qatar Airways,961,2022-03-27
+2022-03-28,active,Hasanudin,Asia-Makassar,Jefman,Asia-Jayapura,3,Lion Air,3942,2022-03-27
+2022-03-28,active,Hasanudin,Asia-Makassar,Jefman,Asia-Jayapura,3,None,6421,2022-03-27
+2022-03-28,active,Darwin,Australia-Darwin,Townsville International,Australia-Brisbane,None,Alliance Airlines,1993,2022-03-27
 2022-03-28,active,Darwin,Australia-Darwin,Adelaide International Airport,Australia-Adelaide,1,Alliance Airlines,1951,2022-03-27
+2022-03-28,active,Vnukovo,Europe-Moscow,Pulkovo,Europe-Moscow,1,Rossiya Airlines,6034,2022-03-27
+2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Qantas,1776,2022-03-27
+2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Air New Zealand,7162,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Bahrain International,Asia-Bahrain,1,Emirates,2216,2022-03-27
-2022-03-28,active,Singapore Changi,Asia-Singapore,Perth International,Australia-Perth,1,Singapore Airlines,225,2022-03-27
 2022-03-28,active,Auckland International,Pacific-Auckland,Queenstown,Pacific-Auckland,D,Qantas,4985,2022-03-27
 2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Air New Zealand,123,2022-03-27
 2022-03-28,active,Auckland International,Pacific-Auckland,Rarotonga,Pacific-Rarotonga,None,Singapore Airlines,4269,2022-03-27
 2022-03-28,active,Madras International (Meenambakkam),Asia-Kolkata,Kuwait International,Asia-Kuwait,1,IndiGo,1751,2022-03-27
+2022-03-28,active,Indira Gandhi International,Asia-Kolkata,Chhatrapati Shivaji International (Sahar International),Asia-Kolkata,1,GoAir,2501,2022-03-27
+2022-03-28,active,Netaji Subhas Chandra,Asia-Kolkata,Suvarnabhumi International,Asia-Bangkok,3,Thai Airways International,2314,2022-03-27
+2022-03-28,active,Netaji Subhas Chandra,Asia-Kolkata,Suvarnabhumi International,Asia-Bangkok,3,Thai Smile,314,2022-03-27
 2022-03-28,active,Civil,Asia-Kolkata,Dubai,Asia-Dubai,2,Air India Express,611,2022-03-27
-2022-03-28,active,Townsville International,Australia-Brisbane,Cairns,Australia-Brisbane,2,Qantas,2352,2022-03-27
-2022-03-28,active,Cairns,Australia-Brisbane,Townsville International,Australia-Brisbane,2,Alliance Airlines,7300,2022-03-27
 2022-03-28,active,Canberra,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Etihad Airways,6708,2022-03-27
 2022-03-28,active,Canberra,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Singapore Airlines,6439,2022-03-27
 2022-03-28,active,Canberra,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Virgin Australia,1209,2022-03-27
@@ -25,18 +40,21 @@ flight_date,flight_status,departure_airport,departure_timezone,arrival_airport,a
 2022-03-28,active,Canberra,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Emirates,5339,2022-03-27
 2022-03-28,active,Canberra,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Qantas,1513,2022-03-27
 2022-03-28,active,Tan Son Nhat International,Asia-Ho_Chi_Minh,Guangzhou Baiyun International,Asia-Shanghai,2,China Southern Airlines,5022,2022-03-27
-2022-03-28,active,Rotorua,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Qantas,8515,2022-03-27
-2022-03-28,active,Rotorua,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Singapore Airlines,4421,2022-03-27
-2022-03-28,active,Rotorua,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Air New Zealand,8150,2022-03-27
 2022-03-28,active,Darwin,Australia-Darwin,Adelaide International Airport,Australia-Adelaide,1,Air New Zealand,7505,2022-03-27
 2022-03-28,active,Darwin,Australia-Darwin,Adelaide International Airport,Australia-Adelaide,1,Emirates,5123,2022-03-27
+2022-03-28,active,Hangzhou,Asia-Shanghai,Guiyang,Asia-Shanghai,T2,SF Airlines,7198,2022-03-27
 2022-03-28,active,Hangzhou,Asia-Shanghai,Shenyang,Asia-Shanghai,T3,SF Airlines,6864,2022-03-27
+2022-03-28,active,Hangzhou,Asia-Shanghai,Weifang,Asia-Shanghai,None,SF Airlines,6858,2022-03-27
 2022-03-28,active,Hangzhou,Asia-Shanghai,Harbin,Asia-Shanghai,T2,SF Airlines,7022,2022-03-27
 2022-03-28,active,Gold Coast (coolangatta),Australia-Brisbane,Kingsford Smith,Australia-Sydney,2,Virgin Australia,504,2022-03-27
 2022-03-28,active,Brisbane International,Australia-Brisbane,Tullamarine,Australia-Melbourne,3,Etihad Airways,6532,2022-03-27
+2022-03-28,active,Brisbane International,Australia-Brisbane,Moranbah,Australia-Brisbane,D,Qantas,2450,2022-03-27
+2022-03-28,active,Brisbane International,Australia-Brisbane,Moranbah,Australia-Brisbane,D,Air New Zealand,7228,2022-03-27
 2022-03-28,active,Brisbane International,Australia-Brisbane,Tullamarine,Australia-Melbourne,3,Hawaiian Airlines,4020,2022-03-27
 2022-03-28,active,Brisbane International,Australia-Brisbane,Tullamarine,Australia-Melbourne,3,Singapore Airlines,6896,2022-03-27
 2022-03-28,active,Brisbane International,Australia-Brisbane,Tullamarine,Australia-Melbourne,3,Virgin Australia,308,2022-03-27
+2022-03-28,active,Tullamarine,Australia-Melbourne,Hobart,Australia-Hobart,D,Qantas,5703,2022-03-27
+2022-03-28,active,Tullamarine,Australia-Melbourne,Hobart,Australia-Hobart,D,Jetstar,703,2022-03-27
 2022-03-28,active,Tullamarine,Australia-Melbourne,Brisbane International,Australia-Brisbane,D,China Southern Airlines,7589,2022-03-27
 2022-03-28,active,Tullamarine,Australia-Melbourne,Brisbane International,Australia-Brisbane,D,Emirates,5604,2022-03-27
 2022-03-28,active,Tullamarine,Australia-Melbourne,Brisbane International,Australia-Brisbane,D,Air New Zealand,7604,2022-03-27
@@ -51,13 +69,22 @@ flight_date,flight_status,departure_airport,departure_timezone,arrival_airport,a
 2022-03-28,active,Tullamarine,Australia-Melbourne,Kingsford Smith,Australia-Sydney,3,Qantas,414,2022-03-27
 2022-03-28,active,Tullamarine,Australia-Melbourne,Kingsford Smith,Australia-Sydney,2,Virgin Australia,815,2022-03-27
 2022-03-28,active,Tullamarine,Australia-Melbourne,Ballina Byron Gateway,Australia-Sydney,2,Virgin Australia,1197,2022-03-27
+2022-03-28,active,Tullamarine,Australia-Melbourne,Kingsford Smith,Australia-Sydney,3,Qantas,418,2022-03-27
 2022-03-28,active,Indira Gandhi International,Asia-Kolkata,Hyderabad Airport,Asia-Kolkata,MAIN,IndiGo,2325,2022-03-27
 2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Air New Zealand,7216,2022-03-27
 2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Qantas,2420,2022-03-27
 2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Etihad Airways,6971,2022-03-27
 2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Singapore Airlines,6505,2022-03-27
 2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Alliance Airlines,1101,2022-03-27
+2022-03-28,active,Gisborne,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Qantas,8494,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Bahrain International,Asia-Bahrain,1,flydubai,29,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Charles De Gaulle,Europe-Paris,2E,Air France,655,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Frankfurt International Airport,Europe-Berlin,1,Lufthansa,631,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,1,KLM,428,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Thiruvananthapuram International,Asia-Kolkata,1,Air India Express,540,2022-03-27
+2022-03-28,active,Kingsford Smith,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Singapore Airlines,6690,2022-03-27
+2022-03-28,active,Kingsford Smith,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Hawaiian Airlines,4157,2022-03-27
+2022-03-28,active,Kingsford Smith,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Etihad Airways,6794,2022-03-27
 2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Qantas,417,2022-03-27
 2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Air New Zealand,1817,2022-03-27
 2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Bangkok Airways,4584,2022-03-27
@@ -72,30 +99,3 @@ flight_date,flight_status,departure_airport,departure_timezone,arrival_airport,a
 2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,3,Hawaiian Airlines,4128,2022-03-27
 2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,3,Etihad Airways,6765,2022-03-27
 2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Qantas,415,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Bangkok Airways,4580,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Air New Zealand,1815,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Emirates,5415,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,British Airways,7441,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Launceston,Australia-Hobart,1,Jetstar,745,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Launceston,Australia-Hobart,1,Qantas,5745,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Jetstar,402,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Qantas,5402,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Cairns,Australia-Brisbane,2,Virgin Australia,1411,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Cairns,Australia-Brisbane,2,Singapore Airlines,6656,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Cairns,Australia-Brisbane,2,Etihad Airways,6456,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Virgin Australia,505,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Singapore Airlines,6710,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Etihad Airways,6899,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Qantas,413,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,Air New Zealand,1813,2022-03-27
-2022-03-28,active,Shuangliu,Asia-Shanghai,Tan Son Nhat International,Asia-Ho_Chi_Minh,1,Vietnam Airlines,5563,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Timaru,Pacific-Auckland,None,Air New Zealand,8193,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Queenstown,Pacific-Auckland,D,Etihad Airways,4587,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Auckland International,Pacific-Auckland,D,EVA Air,3264,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Etihad Airways,4508,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Qantas,8537,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Air New Zealand,416,2022-03-27
-2022-03-28,active,Cairns,Australia-Brisbane,Brisbane International,Australia-Brisbane,D,Qantas,707,2022-03-27
-2022-03-28,active,Cairns,Australia-Brisbane,Brisbane International,Australia-Brisbane,D,Air New Zealand,7127,2022-03-27
-2022-03-28,active,Cairns,Australia-Brisbane,Brisbane International,Australia-Brisbane,D,Emirates,5424,2022-03-27
-2022-03-28,active,Almaty,Asia-Almaty,Uralsk / Podstepnyy,Asia-Oral,None,Air Astana,7167,2022-03-27
