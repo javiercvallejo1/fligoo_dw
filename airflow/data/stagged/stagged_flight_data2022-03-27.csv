@@ -1,101 +1,103 @@
 flight_date,flight_status,departure_airport,departure_timezone,arrival_airport,arrival_timezone,arrival_terminal,airline_name,flight_number,timestamp
+2022-03-28,active,Matsuyama,Asia-Tokyo,Haneda Airport,Asia-Tokyo,2,ANA,582,2022-03-27
+2022-03-28,active,Shuangliu,Asia-Shanghai,Bangalore International Airport,Asia-Kolkata,1,Lufthansa Cargo,8411,2022-03-27
+2022-03-28,active,Eltari,Asia-Dili,Soekarno-Hatta International,Asia-Jakarta,2,Batik Air,6541,2022-03-27
+2022-03-28,active,Alice Springs,Australia-Darwin,Adelaide International Airport,Australia-Adelaide,1,Alliance Airlines,1955,2022-03-27
+2022-03-28,active,Zamboanga International,Asia-Manila,Ninoy Aquino International,Asia-Manila,3,Cebu Pacific Air,862,2022-03-27
+2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,"Sultan Aji Muhamad Sulaiman Airport
+",None,1,Lion Air,760,2022-03-27
+2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,"Sultan Aji Muhamad Sulaiman Airport
+",None,1,None,6313,2022-03-27
+2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Lombok International,Asia-Makassar,2,Batik Air,6656,2022-03-27
+2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Juanda,Asia-Jakarta,2,Batik Air,6370,2022-03-27
 2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Sjamsudin Noor,Asia-Makassar,1,Lion Air,528,2022-03-27
 2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Sjamsudin Noor,Asia-Makassar,1,None,6176,2022-03-27
+2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,None,None,2,Lion Air,210,2022-03-27
+2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,None,None,2,None,6105,2022-03-27
 2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Juanda,Asia-Jakarta,1,Lion Air,690,2022-03-27
 2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Juanda,Asia-Jakarta,1,None,6116,2022-03-27
-2022-03-28,active,Soekarno-Hatta International,Asia-Jakarta,Ngurah Rai International,Asia-Makassar,D,Batik Air,6500,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Tribhuvan International,Asia-Kathmandu,I,None,4970,2022-03-27
+2022-03-28,active,Chu-Bu Centrair International (Central Japan International),Asia-Tokyo,Naha,Asia-Tokyo,D,Japan Transocean Air,43,2022-03-27
+2022-03-28,active,Chu-Bu Centrair International (Central Japan International),Asia-Tokyo,Kumamoto,Asia-Tokyo,2,ANA,331,2022-03-27
+2022-03-28,active,Chu-Bu Centrair International (Central Japan International),Asia-Tokyo,Kagoshima,Asia-Tokyo,2,Skymark Airlines,635,2022-03-27
+2022-03-28,active,Shuangliu,Asia-Shanghai,Gonggar/Lhasa,Asia-Shanghai,T3,Loong Air,5039,2022-03-27
+2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,China Eastern Airlines,4281,2022-03-27
+2022-03-28,active,None,None,Dali,Asia-Shanghai,None,Lucky Air,9653,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Hyderabad Airport,Asia-Kolkata,MAIN,Air India,952,2022-03-27
 2022-03-28,active,Kagoshima,Asia-Tokyo,Haneda Airport,Asia-Tokyo,1,Skymark Airlines,300,2022-03-27
+2022-03-28,active,King Khaled International,Asia-Riyadh,Amausi,Asia-Kolkata,2,flynas,333,2022-03-27
+2022-03-28,active,Polonia,Asia-Jakarta,Soekarno-Hatta International,Asia-Jakarta,2,Batik Air,6881,2022-03-27
+2022-03-28,active,Can Tho,Asia-Ho_Chi_Minh,Noibai International,Asia-Ho_Chi_Minh,1,FlexFlight,4462,2022-03-27
+2022-03-28,active,Can Tho,Asia-Ho_Chi_Minh,Noibai International,Asia-Ho_Chi_Minh,1,None,2462,2022-03-27
 2022-03-28,active,Christchurch International,Pacific-Auckland,Brisbane International,Australia-Brisbane,I,Air China LTD,5170,2022-03-27
-2022-03-28,active,Hangzhou,Asia-Shanghai,Shenzhen,Asia-Shanghai,T3,SF Airlines,7304,2022-03-27
+2022-03-28,active,Catbi,Asia-Ho_Chi_Minh,Phung-Duc,Asia-Ho_Chi_Minh,1,FlexFlight,4671,2022-03-27
+2022-03-28,active,Halle,Europe-Berlin,Marco Polo,Europe-Rome,1,DHL Air,None,2022-03-27
+2022-03-28,active,Istanbul Airport,Europe-Istanbul,Antalya,Europe-Istanbul,D,Air Serbia,8106,2022-03-27
+2022-03-28,active,Haneda Airport,Asia-Tokyo,Fukuoka,Asia-Tokyo,D,American Airlines,7249,2022-03-27
+2022-03-28,active,Haneda Airport,Asia-Tokyo,Fukuoka,Asia-Tokyo,D,Qatar Airways,6047,2022-03-27
+2022-03-28,active,Haneda Airport,Asia-Tokyo,Fukuoka,Asia-Tokyo,D,Hawaiian Airlines,5138,2022-03-27
+2022-03-28,active,Haneda Airport,Asia-Tokyo,Kansai International,Asia-Tokyo,1,JAL,221,2022-03-27
+2022-03-28,active,Bandaranaike International,Asia-Colombo,Bangalore International Airport,Asia-Kolkata,1,IndiGo,1206,2022-03-27
+2022-03-28,active,Bahrain International,Asia-Bahrain,Istanbul Airport,Europe-Istanbul,I,Turkish Airlines,779,2022-03-27
+2022-03-28,active,Bahrain International,Asia-Bahrain,Istanbul Airport,Europe-Istanbul,I,Singapore Airlines,6279,2022-03-27
+2022-03-28,active,Bahrain International,Asia-Bahrain,Istanbul Airport,Europe-Istanbul,I,ANA,6631,2022-03-27
+2022-03-28,active,Bahrain International,Asia-Bahrain,Istanbul Airport,Europe-Istanbul,I,Gulf Air,6079,2022-03-27
+2022-03-28,active,Indira Gandhi International,Asia-Kolkata,Ahmedabad,Asia-Kolkata,1,IndiGo,5026,2022-03-27
+2022-03-28,active,Darwin,Australia-Darwin,Nhulunbuy,Australia-Darwin,2,Qantas,8665,2022-03-27
 2022-03-28,active,Darwin,Australia-Darwin,Alyangula,Australia-Darwin,None,Airnorth,404,2022-03-27
 2022-03-28,active,Kansai International,Asia-Tokyo,Haneda Airport,Asia-Tokyo,2,ANA,94,2022-03-27
-2022-03-28,active,Kansai International,Asia-Tokyo,Haneda Airport,Asia-Tokyo,2,ANA,990,2022-03-27
-2022-03-28,active,Kansai International,Asia-Tokyo,Haneda Airport,Asia-Tokyo,1,StarFlyer,20,2022-03-27
-2022-03-28,active,Kansai International,Asia-Tokyo,Haneda Airport,Asia-Tokyo,1,ANA,3820,2022-03-27
+2022-03-28,active,Kansai International,Asia-Tokyo,Ishigaki,Asia-Tokyo,D,Peach Aviation,231,2022-03-27
+2022-03-28,active,Kansai International,Asia-Tokyo,Fukuoka,Asia-Tokyo,D,Peach Aviation,151,2022-03-27
+2022-03-28,active,Kansai International,Asia-Tokyo,Sendai,Asia-Tokyo,7,Peach Aviation,131,2022-03-27
 2022-03-28,active,Kansai International,Asia-Tokyo,Chitose,Asia-Tokyo,D,Peach Aviation,101,2022-03-27
-2022-03-28,active,Queenstown,Pacific-Auckland,Christchurch International,Pacific-Auckland,None,Air New Zealand,5644,2022-03-27
-2022-03-28,active,Queenstown,Pacific-Auckland,Christchurch International,Pacific-Auckland,None,Etihad Airways,4580,2022-03-27
+2022-03-28,active,Queenstown,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Jetstar,292,2022-03-27
+2022-03-28,active,Queenstown,Pacific-Auckland,Auckland International,Pacific-Auckland,D,LATAM Airlines,5699,2022-03-27
+2022-03-28,active,Queenstown,Pacific-Auckland,Auckland International,Pacific-Auckland,D,American Airlines,9044,2022-03-27
+2022-03-28,active,Queenstown,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Emirates,7562,2022-03-27
+2022-03-28,active,Queenstown,Pacific-Auckland,Auckland International,Pacific-Auckland,D,Qantas,4986,2022-03-27
 2022-03-28,active,Kansai International,Asia-Tokyo,Naha,Asia-Tokyo,D,Peach Aviation,211,2022-03-27
+2022-03-28,active,Novyy,Asia-Vladivostok,Tolmachevo,Asia-Novosibirsk,A,S7 Airlines,5238,2022-03-27
 2022-03-28,active,Henri Coanda International,Europe-Bucharest,Cairo International Airport,Africa-Cairo,2,TAROM,101,2022-03-27
 2022-03-28,active,Quaid-e-azam International,Asia-Karachi,Sharjah,Asia-Dubai,None,Air Arabia,547,2022-03-27
+2022-03-28,active,Doha International,Asia-Qatar,Murtala Muhammed,Africa-Lagos,I,Qatar Airways,8721,2022-03-27
+2022-03-28,active,Doha International,Asia-Qatar,Frankfurt International Airport,Europe-Berlin,1,Qatar Airways,8223,2022-03-27
+2022-03-28,active,Doha International,Asia-Qatar,Gatwick,Europe-London,S,British Airways,2032,2022-03-27
 2022-03-28,active,Doha International,Asia-Qatar,Kisauni,Africa-Dar_es_Salaam,2,Qatar Airways,1351,2022-03-27
+2022-03-28,active,Doha International,Asia-Qatar,None,None,MAIN,Qatar Airways,490,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Novo Alexeyevka International,Asia-Tbilisi,3,Emirates,2202,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Patenga,Asia-Dhaka,None,Emirates,2218,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Zurich,Europe-Zurich,2,United Airlines,9731,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Zurich,Europe-Zurich,2,Air Canada,6799,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Heathrow,Europe-London,5,American Airlines,6416,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Heathrow,Europe-London,5,Iberia,7346,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Heathrow,Europe-London,5,Aer Lingus,8806,2022-03-27
-2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,1,Delta Air Lines,9385,2022-03-27
-2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,1,Air France,8422,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,3,Delta Air Lines,9385,2022-03-27
+2022-03-28,active,Dubai,Asia-Dubai,Schiphol,Europe-Amsterdam,3,Air France,8422,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Frankfurt International Airport,Europe-Berlin,1,United Airlines,8741,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Frankfurt International Airport,Europe-Berlin,1,Air Canada,9081,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Charles De Gaulle,Europe-Paris,2E,KLM,2287,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Charles De Gaulle,Europe-Paris,2E,Delta Air Lines,8627,2022-03-27
 2022-03-28,active,Dubai,Asia-Dubai,Sialkot International,Asia-Karachi,MAIN,Emirates,2114,2022-03-27
 2022-03-28,active,None,None,Milano Malpensa,Europe-Rome,1,Cargolux,8727,2022-03-27
+2022-03-28,active,Marseille Provence Airport,Europe-Paris,Malta International,Europe-Malta,T1,ASL Airlines Ireland,4403,2022-03-27
+2022-03-28,active,Ahmedabad,Asia-Kolkata,Dubai,Asia-Dubai,3,Emirates,539,2022-03-27
+2022-03-28,active,Ahmedabad,Asia-Kolkata,Indira Gandhi International,Asia-Kolkata,T1 A,IndiGo,158,2022-03-27
+2022-03-28,active,Ahmedabad,Asia-Kolkata,Bangalore International Airport,Asia-Kolkata,1,IndiGo,6422,2022-03-27
+2022-03-28,active,Singapore Changi,Asia-Singapore,Kingsford Smith,Australia-Sydney,1,Scoot,2,2022-03-27
+2022-03-28,active,Netaji Subhas Chandra,Asia-Kolkata,Madras International (Meenambakkam),Asia-Kolkata,1,IndiGo,989,2022-03-27
 2022-03-28,active,Perth International,Australia-Perth,Port Hedland,Australia-Perth,4,Air New Zealand,7459,2022-03-27
+2022-03-28,active,Alama Iqbal International,Asia-Karachi,King Abdulaziz International,Asia-Riyadh,1,Saudia,737,2022-03-27
+2022-03-28,active,Chhatrapati Shivaji International (Sahar International),Asia-Kolkata,Bole International,Africa-Addis_Ababa,2,Air India,7551,2022-03-27
+2022-03-28,active,Rotorua,Pacific-Auckland,Christchurch International,Pacific-Auckland,None,Air New Zealand,5785,2022-03-27
+2022-03-28,active,Rotorua,Pacific-Auckland,Christchurch International,Pacific-Auckland,None,Qantas,8563,2022-03-27
+2022-03-28,active,Kingsford Smith,Australia-Sydney,Tullamarine,Australia-Melbourne,1,China Eastern Airlines,4279,2022-03-27
 2022-03-28,active,Pulkovo,Europe-Moscow,Syktyvkar,Europe-Moscow,B,Rossiya Airlines,6587,2022-03-27
+2022-03-28,active,Peshawar,Asia-Karachi,Doha International,Asia-Qatar,I,Qatar Airways,601,2022-03-27
+2022-03-28,active,Peshawar,Asia-Karachi,Doha International,Asia-Qatar,I,Oman Air,6021,2022-03-27
+2022-03-28,active,Peshawar,Asia-Karachi,Doha International,Asia-Qatar,I,Iberia,2483,2022-03-27
 2022-03-28,active,Tottori,Asia-Tokyo,Haneda Airport,Asia-Tokyo,2,ANA,292,2022-03-27
-2022-03-28,active,Darwin,Australia-Darwin,Alice Springs,Australia-Darwin,None,Alliance Airlines,1958,2022-03-27
-2022-03-28,active,Bandaranaike International,Asia-Colombo,Indira Gandhi International,Asia-Kolkata,3,Air India,284,2022-03-27
-2022-03-28,active,Bandaranaike International,Asia-Colombo,Dubai,Asia-Dubai,2,flydubai,570,2022-03-27
-2022-03-28,active,Bandaranaike International,Asia-Colombo,Dubai,Asia-Dubai,2,Emirates,2041,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Queenstown,Pacific-Auckland,None,Etihad Airways,4543,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Queenstown,Pacific-Auckland,None,Qantas,8611,2022-03-27
-2022-03-28,active,Wellington International,Pacific-Auckland,Queenstown,Pacific-Auckland,None,Air New Zealand,603,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Virgin Australia,511,2022-03-27
-2022-03-28,active,Ngurah Rai International,Asia-Makassar,Doha International,Asia-Qatar,I,British Airways,6361,2022-03-27
-2022-03-28,active,Ngurah Rai International,Asia-Makassar,Doha International,Asia-Qatar,I,Iberia,7967,2022-03-27
-2022-03-28,active,Ngurah Rai International,Asia-Makassar,Doha International,Asia-Qatar,I,Qatar Airways,961,2022-03-27
-2022-03-28,active,Hasanudin,Asia-Makassar,Jefman,Asia-Jayapura,3,Lion Air,3942,2022-03-27
-2022-03-28,active,Hasanudin,Asia-Makassar,Jefman,Asia-Jayapura,3,None,6421,2022-03-27
-2022-03-28,active,None,None,Dubai,Asia-Dubai,3,Emirates,2491,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Hamilton Island,Australia-Lindeman,D,Singapore Airlines,6666,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Hamilton Island,Australia-Lindeman,D,Etihad Airways,6471,2022-03-27
-2022-03-28,active,Darwin,Australia-Darwin,Townsville International,Australia-Brisbane,None,Alliance Airlines,1993,2022-03-27
-2022-03-28,active,Townsville International,Australia-Brisbane,Tullamarine,Australia-Melbourne,1,Alliance Airlines,1987,2022-03-27
-2022-03-28,active,Doha International,Asia-Qatar,Kisauni,Africa-Dar_es_Salaam,2,Finnair,2753,2022-03-27
-2022-03-28,active,Doha International,Asia-Qatar,Kisauni,Africa-Dar_es_Salaam,2,JetBlue Airways,6552,2022-03-27
-2022-03-28,active,Doha International,Asia-Qatar,Kisauni,Africa-Dar_es_Salaam,2,British Airways,6169,2022-03-27
-2022-03-28,active,Doha International,Asia-Qatar,Kisauni,Africa-Dar_es_Salaam,2,JAL,9231,2022-03-27
-2022-03-28,active,Doha International,Asia-Qatar,Kisauni,Africa-Dar_es_Salaam,2,LATAM Airlines,7442,2022-03-27
-2022-03-28,active,Darwin,Australia-Darwin,Adelaide International Airport,Australia-Adelaide,1,Alliance Airlines,1951,2022-03-27
-2022-03-28,active,Canberra,Australia-Sydney,Adelaide International Airport,Australia-Adelaide,1,Alliance Airlines,1975,2022-03-27
-2022-03-28,active,Vnukovo,Europe-Moscow,Pulkovo,Europe-Moscow,1,Rossiya Airlines,6034,2022-03-27
-2022-03-28,active,Gladstone,Australia-Brisbane,Brisbane International,Australia-Brisbane,D,Air New Zealand,7189,2022-03-27
-2022-03-28,active,Gladstone,Australia-Brisbane,Brisbane International,Australia-Brisbane,D,Qantas,1787,2022-03-27
-2022-03-28,active,Williamtown,Australia-Sydney,Tullamarine,Australia-Melbourne,4,Jetstar,471,2022-03-27
-2022-03-28,active,Williamtown,Australia-Sydney,Tullamarine,Australia-Melbourne,4,Emirates,7522,2022-03-27
-2022-03-28,active,Williamtown,Australia-Sydney,Tullamarine,Australia-Melbourne,4,Qantas,5471,2022-03-27
-2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Qantas,1776,2022-03-27
-2022-03-28,active,Williamtown,Australia-Sydney,Brisbane International,Australia-Brisbane,D,Air New Zealand,7162,2022-03-27
-2022-03-28,active,Dubai,Asia-Dubai,Mashad,Asia-Tehran,2,Emirates,2082,2022-03-27
-2022-03-28,active,Shonai,Asia-Tokyo,Haneda Airport,Asia-Tokyo,2,ANA,394,2022-03-27
-2022-03-28,active,Shonai,Asia-Tokyo,Haneda Airport,Asia-Tokyo,2,Thai Airways International,6147,2022-03-27
-2022-03-28,active,Dubai,Asia-Dubai,Bahrain International,Asia-Bahrain,1,Emirates,2216,2022-03-27
-2022-03-28,active,Pulkovo,Europe-Moscow,Khrabrovo,Europe-Kaliningrad,A,Rossiya Airlines,6327,2022-03-27
-2022-03-28,active,Tullamarine,Australia-Melbourne,Kingsford Smith,Australia-Sydney,3,Qantas,426,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Alaska Airlines,9513,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Air China LTD,5109,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Etihad Airways,4409,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Singapore Airlines,4231,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Turkish Airlines,8737,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,United Airlines,6781,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Tullamarine,Australia-Melbourne,2,Air New Zealand,123,2022-03-27
-2022-03-28,active,Auckland International,Pacific-Auckland,Rarotonga,Pacific-Rarotonga,None,Singapore Airlines,4269,2022-03-27
-2022-03-28,active,Kuching,Asia-Kuching,Kota-Kinabalu International Airport,Asia-Kuching,1,AirAsia,6350,2022-03-27
-2022-03-28,active,Guam International,Pacific-Guam,Truk,Pacific-Chuuk,None,United Airlines,155,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Etihad Airways,6440,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Singapore Airlines,6712,2022-03-27
-2022-03-28,active,Kingsford Smith,Australia-Sydney,Gold Coast (coolangatta),Australia-Brisbane,1,Etihad Airways,6430,2022-03-27
-2022-03-28,active,Queenstown,Pacific-Auckland,Wellington International,Pacific-Auckland,None,Etihad Airways,4545,2022-03-27
-2022-03-28,active,Madras International (Meenambakkam),Asia-Kolkata,Kuwait International,Asia-Kuwait,1,IndiGo,1751,2022-03-27
-2022-03-28,active,Naha,Asia-Tokyo,Narita International Airport,Asia-Tokyo,1,Peach Aviation,500,2022-03-27
-2022-03-28,active,Naha,Asia-Tokyo,Kansai International,Asia-Tokyo,2,Peach Aviation,210,2022-03-27
-2022-03-28,active,Indira Gandhi International,Asia-Kolkata,Chhatrapati Shivaji International (Sahar International),Asia-Kolkata,1,GoAir,2501,2022-03-27
-2022-03-28,active,Indira Gandhi International,Asia-Kolkata,Netaji Subhas Chandra,Asia-Kolkata,1,IndiGo,788,2022-03-27
-2022-03-28,active,Netaji Subhas Chandra,Asia-Kolkata,Suvarnabhumi International,Asia-Bangkok,3,Thai Airways International,2314,2022-03-27
-2022-03-28,active,Netaji Subhas Chandra,Asia-Kolkata,Suvarnabhumi International,Asia-Bangkok,3,Thai Smile,314,2022-03-27
-2022-03-28,active,Esenboga International,Europe-Istanbul,Tabriz,Asia-Tehran,None,Turkish Airlines,7946,2022-03-27
-2022-03-28,active,Bole International,Africa-Addis_Ababa,Charles De Gaulle,Europe-Paris,2A,Air Canada,6025,2022-03-27
+2022-03-28,active,Chongqing Jiangbei International,Asia-Shanghai,Changde,Asia-Shanghai,T2,Sichuan Airlines,4553,2022-03-27
+2022-03-28,active,Chongqing Jiangbei International,Asia-Shanghai,Changde,Asia-Shanghai,T2,China Eastern Airlines,4483,2022-03-27
+2022-03-28,active,Chongqing Jiangbei International,Asia-Shanghai,Changde,Asia-Shanghai,T2,Kunming Airlines,5071,2022-03-27
+2022-03-28,active,Chongqing Jiangbei International,Asia-Shanghai,Changde,Asia-Shanghai,T2,Loong Air,5375,2022-03-27
+2022-03-28,active,Chongqing Jiangbei International,Asia-Shanghai,Changde,Asia-Shanghai,T2,Shandong Airlines,3795,2022-03-27
