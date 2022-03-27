@@ -134,20 +134,20 @@ end = DummyOperator(
     trigger_rule='none_failed',
     dag=dag)
 
-send_request=PythonOperator(task_id='csv2database'
+send_request=PythonOperator(task_id='send_request'
             ,provide_context=True
             ,python_callable=extract_data
             ,dag=dag
             )
 
-crush_data=PythonOperator(task_id='csv2database'
+crush_data=PythonOperator(task_id='crush_data'
             ,provide_context=True
             ,python_callable=process_data
             ,dag=dag
             )
 
 
-write_data=PythonOperator(task_id='csv2database'
+write_data=PythonOperator(task_id='write_data'
             ,provide_context=True
             ,python_callable=write_db
             ,dag=dag
