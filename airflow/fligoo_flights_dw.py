@@ -25,11 +25,16 @@ def extract_data():
     FLIGHT_STATUS="active"
     URL = 'http://api.aviationstack.com/v1/flights'
     QUERY_PARAMS= {'access_key':ACCESS_KEY,'limit':LIMIT,'flight_status':FLIGHT_STATUS}
+    RAW_FILE_DIR = './airflow/data/raw/raw_flight_data_'+str(today)+'.json'
 
     response= requests.get(URL,params=QUERY_PARAMS)
+    if not os.path.isdir(RAW_FILE_DIR):
+    os.makedirs(RAW_FILE_DIR)
+    print("created folder : ", RAW_FILE_DIR)
 
-    with open('airflow/data/raw/raw_flight_data_'+str(today)+'.json','w') as f:
+    with open(RAW_FILE_DIR,'w') as f:
         json.dump(response.json(),f)
+    
     
     return print(response)
 
@@ -39,6 +44,10 @@ def process_data():
     today=date.today()
     RAW_FILE_DIR='airflow/data/raw/raw_flight_data_'+str(today)+'.json'
     STAGGED_FILE_DIR = 'airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    if not os.path.isdir(STAGGED_FILE_DIR):
+    os.makedirs(STAGGED_FILE_DIR)
+    print("created folder : ", STAGGED_FILE_DIR)
+
     f=open(RAW_FILE_DIR,'r')
 
     json_data : dict = json.load(f)
