@@ -12,21 +12,22 @@ def request_data():
     LIMIT = 100
     FLIGHT_STATUS="active"
     URL = 'http://api.aviationstack.com/v1/flights'
+    RAW_FILE_DIR = './airflow/data/raw/raw_flight_data_'+str(today)+'.json'
     QUERY_PARAMS= {'access_key':ACCESS_KEY,'limit':LIMIT,'flight_status':FLIGHT_STATUS}
 
     response= requests.get(URL,params=QUERY_PARAMS)
 
-    with open('airflow/data/raw/raw_flight_data_'+str(today)+'.json','w') as f:
+    with open(RAW_FILE_DIR,'w') as f:
         json.dump(response.json(),f)
     
-    return print(response)
+    return print(str(response) + 'data written at' + RAW_FILE_DIR)
 
 
 def extract_data():
 
     today=date.today()
-    RAW_FILE_DIR='airflow/data/raw/raw_flight_data_'+str(today)+'.json'
-    STAGGED_FILE_DIR = 'airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    RAW_FILE_DIR='./airflow/data/raw/raw_flight_data_'+str(today)+'.json'
+    STAGGED_FILE_DIR = './airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
     f=open(RAW_FILE_DIR,'r')
 
     json_data : dict = json.load(f)
@@ -72,7 +73,7 @@ def extract_data():
 
 def write_db():
     today=date.today()
-    STAGGED_FILE_DIR='airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    STAGGED_FILE_DIR='./airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
 
     get_postgres_conn=PostgresHook(postgres_conn_id='fligooTest').get_conn()
     curr=get_postgres_conn.cursor()
