@@ -7,6 +7,7 @@ import json
 import csv
 
 from airflow import DAG
+from airflow.settings import AIRFLOW_HOME
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
@@ -17,7 +18,6 @@ from datetime import date
 
 
 
-
 def extract_data():
     today=date.today()
     ACCESS_KEY= 'f98135edd6678737ff688fe02bbcc9e3'
@@ -25,14 +25,15 @@ def extract_data():
     FLIGHT_STATUS="active"
     URL = 'http://api.aviationstack.com/v1/flights'
     QUERY_PARAMS= {'access_key':ACCESS_KEY,'limit':LIMIT,'flight_status':FLIGHT_STATUS}
-    RAW_FILE_DIR = './data/raw/raw_flight_data_'+str(today)+'.json'
+    RAW_FILE_DIR =os.path.join(AIRFLOW_HOME,'./data/raw')
+    RAW_FILE = os.path.join(RAW_FILE_DIR,'raw_flight_data_'+str(today)+'.json')
 
     response= requests.get(URL,params=QUERY_PARAMS)
     if not os.path.isdir(RAW_FILE_DIR):
         os.makedirs(RAW_FILE_DIR)
         print("created folder : ", RAW_FILE_DIR)
 
-    with open(RAW_FILE_DIR,'w') as f:
+    with open(RAW_FILE,'w') as f:
         json.dump(response.json(),f)
     
     
@@ -42,8 +43,9 @@ def extract_data():
 def process_data():
 
     today=date.today()
-    RAW_FILE_DIR='./data/raw/raw_flight_data_'+str(today)+'.json'
-    STAGGED_FILE_DIR = './data/stagged/stagged_flight_data'+str(today)+'.csv'
+    RAW_FILE_DIR=os.path.join(AIRFLOW_HOME,'./data/raw/raw_flight_data_'+str(today)+'.json')
+    STAGGED_FILE_DIR = os.path.join(AIRFLOW_HOME,'./data/stagged')
+    STAGGED_FILE = os.path.join(STAGGED_FILE_DIR,'stagged_flight_data'+str(today)+'.csv')
     if not os.path.isdir(STAGGED_FILE_DIR):
         os.makedirs(STAGGED_FILE_DIR)
         print("created folder : ", STAGGED_FILE_DIR)
@@ -85,7 +87,7 @@ def process_data():
 
     
 
-    with open(STAGGED_FILE_DIR,'w') as file:
+    with open(STAGGED_FILE,'w',newline='') as file:
         write=csv.writer(file)
         write.writerow(header)
         write.writerows(extracted_data)
@@ -100,7 +102,7 @@ def postgres_write():
     curr=conn.cursor()
 
     today=date.today()
-    STAGGED_FILE_DIR='./data/stagged/stagged_flight_data'+str(today)+'.csv'
+    STAGGED_FILE_DIR=os.path.join(AIRFLOW_HOME,'./data/stagged/stagged_flight_data'+str(today)+'.csv')
    
     
 
