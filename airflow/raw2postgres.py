@@ -121,7 +121,7 @@ default_args = {
 #tasks
 dag = DAG('fligoo_dw_write',
           default_args=default_args,
-          schedule_interval='0 8 * * 1',
+          schedule_interval='0 8 * * *',
           catchup=False
           )
 
@@ -135,20 +135,20 @@ end = DummyOperator(
     dag=dag)
 
 send_request=PythonOperator(task_id='send_request'
-            ,provide_context=False
+            ,provide_context=True
             ,python_callable=extract_data
             ,dag=dag
             )
 
 crush_data=PythonOperator(task_id='crush_data'
-            ,provide_context=False
+            ,provide_context=True
             ,python_callable=process_data
             ,dag=dag
             )
 
 
 write_data=PythonOperator(task_id='write_data'
-            ,provide_context=False
+            ,provide_context=True
             ,python_callable=write_db
             ,dag=dag
             )
