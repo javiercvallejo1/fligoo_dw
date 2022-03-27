@@ -25,7 +25,7 @@ def extract_data():
     FLIGHT_STATUS="active"
     URL = 'http://api.aviationstack.com/v1/flights'
     QUERY_PARAMS= {'access_key':ACCESS_KEY,'limit':LIMIT,'flight_status':FLIGHT_STATUS}
-    RAW_FILE_DIR = './airflow/data/raw/raw_flight_data_'+str(today)+'.json'
+    RAW_FILE_DIR = './data/raw/raw_flight_data_'+str(today)+'.json'
 
     response= requests.get(URL,params=QUERY_PARAMS)
     if not os.path.isdir(RAW_FILE_DIR):
@@ -42,8 +42,8 @@ def extract_data():
 def process_data():
 
     today=date.today()
-    RAW_FILE_DIR='airflow/data/raw/raw_flight_data_'+str(today)+'.json'
-    STAGGED_FILE_DIR = 'airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    RAW_FILE_DIR='./data/raw/raw_flight_data_'+str(today)+'.json'
+    STAGGED_FILE_DIR = './data/stagged/stagged_flight_data'+str(today)+'.csv'
     if not os.path.isdir(STAGGED_FILE_DIR):
         os.makedirs(STAGGED_FILE_DIR)
         print("created folder : ", STAGGED_FILE_DIR)
@@ -94,7 +94,7 @@ def process_data():
 
 def write_db():
     today=date.today()
-    STAGGED_FILE_DIR='airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    STAGGED_FILE_DIR='./data/stagged/stagged_flight_data'+str(today)+'.csv'
 
     get_postgres_conn=PostgresHook(postgres_conn_id='fligooTest').get_conn()
     curr=get_postgres_conn.cursor()
