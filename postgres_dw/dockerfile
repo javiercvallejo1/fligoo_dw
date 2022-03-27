@@ -1,0 +1,4 @@
+FROM postgres:latest
+ENV POSTGRES_PASSWORD admin
+ENV POSTGRES_DB testfligoo
+COPY sql/create_table.sql /docker-entrypoint-initdb.d/create_table.sql

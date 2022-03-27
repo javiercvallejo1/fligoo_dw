@@ -40,4 +40,4 @@ logs:
     #Fernet Key: QUdMUDFJc29LNU85MTdJSWYyZHlxbnVrdmVwZW9xUFE=
 
 
-#helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner --namespace storage --set nfs.server=$NFS_SERVER --set nfs.path=/
+#helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner --namespace storage --set nfs.server=10.99.90.17 --set nfs.path=/

@@ -2,46 +2,105 @@
 import airflow
 import os
 import psycopg2
+import requests
+import json
+import csv
+
 from airflow import DAG
-from airflow.providers.google.cloud.transfers.gcs_to_gcs import GCSToGCSOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 from airflow.hooks.postgres_hook import PostgresHook
 from datetime import timedelta
 from datetime import datetime
-import pandas as pd
-from google.cloud import storage
-import fsspec as fs
+from datetime import date
 
 
 
 
+def extract_data():
+    today=date.today()
+    ACCESS_KEY= 'f98135edd6678737ff688fe02bbcc9e3'
+    LIMIT = 100
+    FLIGHT_STATUS="active"
+    URL = 'http://api.aviationstack.com/v1/flights'
+    QUERY_PARAMS= {'access_key':ACCESS_KEY,'limit':LIMIT,'flight_status':FLIGHT_STATUS}
 
-#TODO make everything dynamic, like passing in the filename, the bucket, others...
+    response= requests.get(URL,params=QUERY_PARAMS)
+
+    with open('airflow/data/raw/raw_flight_data_'+str(today)+'.json','w') as f:
+        json.dump(response.json(),f)
+    
+    return print(response)
 
 
-def csv2postgres():
-    uri = r"gs://raw_med_pass_it_on/raw_user_purchase.csv"#TODO should be passed as Pub/Sub message
+def process_data():
 
+    today=date.today()
+    RAW_FILE_DIR='airflow/data/raw/raw_flight_data_'+str(today)+'.json'
+    STAGGED_FILE_DIR = 'airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+    f=open(RAW_FILE_DIR,'r')
 
-#    pg_hook=PostgresHook(postgres_conn_id='dd-database')
-    get_postgres_conn=PostgresHook(postgres_conn_id='pass-it-on').get_conn()
+    json_data : dict = json.load(f)
+    data=json_data['data']
+    f.close()
+    extracted_data: list = []
+    header=['flight_date',
+            'flight_status',
+            'departure_airport',
+            'departure_timezone',
+            'arrival_airport',
+            'arrival_timezone',
+            'arrival_terminal', 
+            'airline_name',
+            'flight_number',
+            'timestamp'
+            ]
+    
+    for i in range (0,len(data)):
+        row_data = [  
+                    str(data[i]['flight_date']),
+                    str(data[i]['flight_status']),
+                    str(data[i]['departure']['airport']),
+                    str(data[i]['departure']['timezone']).replace("/","-"),
+                    str(data[i]['arrival']['airport']),
+                    str(data[i]['arrival']['timezone']).replace("/","-"),
+                    str(data[i]['arrival']['terminal']),
+                    str(data[i]['airline']['name']),
+                    str(data[i]['flight']['number']),
+                    today
+                          
+                    ]
+
+        extracted_data.append(row_data)
+
+    
+
+    with open(STAGGED_FILE_DIR,'w') as file:
+        write=csv.writer(file)
+        write.writerow(header)
+        write.writerows(extracted_data)
+    
+    return (print('data extracted and processed_'+str(today)))
+
+def write_db():
+    today=date.today()
+    STAGGED_FILE_DIR='airflow/data/stagged/stagged_flight_data'+str(today)+'.csv'
+
+    get_postgres_conn=PostgresHook(postgres_conn_id='fligooTest').get_conn()
     curr=get_postgres_conn.cursor()
    
-    of = fs.open(uri, "rt")
+    
 
-    with of as f:
-     curr.copy_expert("COPY passiton_raw.user_purchase FROM STDIN WITH CSV HEADER", f)
+    with open(STAGGED_FILE_DIR,'r') as f:
+     curr.copy_expert("COPY processed.testdata FROM STDIN WITH CSV HEADER", f)
      get_postgres_conn.commit()    
-
 
 
 one_day_ago = datetime.combine(
     datetime.today() - timedelta(1),
     datetime.min.time()
 )
-
 
 
 
@@ -60,7 +119,7 @@ default_args = {
 
 
 #tasks
-dag = DAG('postgres_write',
+dag = DAG('fligoo_dw_write',
           default_args=default_args,
           schedule_interval='0 8 * * *',
           catchup=False
@@ -75,43 +134,23 @@ end = DummyOperator(
     trigger_rule='none_failed',
     dag=dag)
 
-
-
-move_file = GCSToGCSOperator(
-    task_id="copy_single_gcs_file",
-    source_bucket='ldn-med-pass-it-on',
-    source_object='user_purchase.csv',
-    destination_bucket='raw-med-pass-it-on',  # If not supplied the source_bucket value will be used
-    destination_object="raw_" + 'user_purchase.csv',  # If not supplied the source_object value will be used
-    dag=dag
-)
-
-task1=PostgresOperator(
-    task_id='create_table'
-    ,sql= 
-        """
-        CREATE SCHEMA IF NOT EXISTS passiton_raw;
-        CREATE TABLE IF NOT EXISTS passiton_raw.user_purchase(
-            invoice_number VARCHAR(10)
-            ,stock_code VARCHAR(20)
-            ,detail VARCHAR(1000)
-            ,quantity INT
-            ,invoice_date TIMESTAMP
-            ,unit_price NUMERIC(8,3)
-            ,customer_id INT
-            ,country VARCHAR(20)
-
-            );
-        """
-    ,postgres_conn_id='pass-it-on'
-    ,autocommit=True
-    ,dag=dag
-    )
-
-task2=PythonOperator(task_id='csv2database'
+send_request=PythonOperator(task_id='csv2database'
             ,provide_context=True
-            ,python_callable=csv2postgres
+            ,python_callable=extract_data
             ,dag=dag
             )
 
-begin>>move_file>>task1>>task2>>end
+crush_data=PythonOperator(task_id='csv2database'
+            ,provide_context=True
+            ,python_callable=process_data
+            ,dag=dag
+            )
+
+
+write_data=PythonOperator(task_id='csv2database'
+            ,provide_context=True
+            ,python_callable=write_db
+            ,dag=dag
+            )
+
+begin>>send_request>>crush_data>>write_data>>end

@@ -11,7 +11,7 @@ default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'start_date': one_day_ago,
-    'email': ['cmadrigal@videoamp.com'],
+    'email': ['javiercvallejo1@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': False,
     'retries': 0,
