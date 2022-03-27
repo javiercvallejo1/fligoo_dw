@@ -92,18 +92,22 @@ def process_data():
     
     return (print('data extracted and processed_'+str(today)))
 
-def write_db():
+def postgres_write():
+    conn = psycopg2.connect(    host="localhost",
+                                database="testfligoo",
+                                user="postgres",
+                                password="admin")
+    curr=conn.cursor()
+
     today=date.today()
     STAGGED_FILE_DIR='./data/stagged/stagged_flight_data'+str(today)+'.csv'
-
-    get_postgres_conn=PostgresHook(postgres_conn_id='fligooTest').get_conn()
-    curr=get_postgres_conn.cursor()
    
     
 
     with open(STAGGED_FILE_DIR,'r') as f:
-     curr.copy_expert("COPY processed.testdata FROM STDIN WITH CSV HEADER", f)
-     get_postgres_conn.commit()    
+        curr.copy_expert("COPY processed.testdata FROM STDIN WITH CSV HEADER", f)
+        conn.commit()
+    print('data stored into dw, have a nice day! :D')
 
 
 one_day_ago = datetime.combine(
@@ -158,7 +162,7 @@ crush_data=PythonOperator(task_id='crush_data'
 
 write_data=PythonOperator(task_id='write_data'
             ,provide_context=True
-            ,python_callable=write_db
+            ,python_callable=postgres_write
             ,dag=dag
             )
 

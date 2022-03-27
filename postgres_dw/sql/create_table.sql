@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS processed.testdata(
     flight_number VARCHAR(100),
     timestamp DATE
 )
-PARTITION BY RANGE (timestamp);
+
 
 
